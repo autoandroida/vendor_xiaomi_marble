@@ -1,0 +1,137 @@
+{
+    "version": "1.0",
+    "product": "marble",
+    "threshold": {
+            "lowAdj_threshold": 201,
+            "lowerAdj_freeMem_threshold": 307200,
+            "cam_boost_threshold": 2621440,
+            "cam_boost_ext_mem": 1048576,
+            "kill_tag": 31,
+            "intercept_restart_time": 3000,
+            "3rd_lowAdj_threshold": 50
+        },
+    "support": {
+            "inhibit_3rdprocs_enable": true,
+            "oom_update_support": true,
+            "cam_boost_forcestop_enable": false,
+            "cam_boost_early_enable": true,
+            "perceptible_support": true
+        },
+    "oom": {
+            "oom_level": "23040:0,38400:100,69120:200,102400:300,179200:800,307200:900"
+        },
+    "configs": [
+        {
+            "name": "protect_list",
+            "config": [
+                "com.tencent.mobileqq",
+                "com.ss.android.lark.kami"
+            ]
+        },
+        {
+            "name": "white_list",
+            "config": [
+                "com.tencent.mm",
+                "com.miui.gallery",
+                "com.miui.personalassistant",
+                "com.miui.screenrecorder",
+                "com.android.camera",
+                "com.miui.miwallpaper",
+                "com.miui.home",
+                "com.tencent.mm:push",
+                "com.tencent.mobileqq:MSF",
+                "com.ss.android.lark.kami:wschannel",
+                "android.process.media",
+                "com.android.traceur",
+                "com.phonetest.application:CameraMemoryWatcher",
+                "android.camera.cts",
+                "android.camera.cts:errorLoggingServiceProcess",
+                "com.miui.avpressuretest"
+            ]
+        },
+        {
+            "name": "intercept_restart_list",
+            "config": [
+                "com.xiaomi.bsp.gps.nps",
+                "com.android.settings:remote",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        }
+    ],
+    "threshold_6Gmem": {
+        "skip_task": 1,
+        "skip_task_lower": 0,
+        "adj_threshold": 201,
+        "lowAdj_threshold": 0,
+        "lowerAdj_freeMem_threshold": 524288,
+        "cam_boost_threshold": 2621440,
+        "cam_boost_ext_mem": 1048576,
+        "kill_tag": 31,
+        "intercept_restart_time": 3000,
+        "3rd_lowAdj_threshold": 50
+    },
+    "oom_6Gmem": {
+        "oom_level": "18432:0,23040:100,127500:200,179200:700,230400:800,307200:900"
+    },
+    "configs_6Gmem": [
+        {
+            "name": "protect_list",
+            "config": [
+                "com.tencent.mobileqq"
+            ]
+        },
+        {
+            "name": "white_list",
+            "config": [
+                "com.tencent.mm",
+                "com.android.camera",
+                "com.miui.home",
+                "com.tencent.mm:push",
+                "com.tencent.mobileqq:MSF",
+                "com.phonetest.application:CameraMemoryWatcher",
+                "android.camera.cts",
+                "android.camera.cts:errorLoggingServiceProcess"
+            ]
+        },
+        {
+            "name": "intercept_restart_list",
+            "config": [
+                "com.xiaomi.bsp.gps.nps",
+                "com.android.settings:remote",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        },
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.google.process.gservices",
+                "com.google.android.gms",
+                "com.google.android.gms.persistent",
+                "com.google.process.gapps",
+                "com.android.vending"
+            ]
+        }
+    ]
+}
